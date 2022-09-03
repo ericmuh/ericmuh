@@ -1,26 +1,12 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
-
-const Home: NextPage = () => {
+import styles from "../styles/Home.module.css";
+function Home() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Eric Muhwezi</title>
-        <meta name="description" content="A personal website by Eric Muhwezi" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-       Eric Muhwezi
+    <div>
+      <main>
+        <h1 className="text-xl"> I am Eric Muhwezi</h1>
       </main>
-
-      <footer className={styles.footer}>
-      
-          Powered by NextJS
-      </footer>
+      <footer className={styles.footer}>Powered by NextJS</footer>
     </div>
-  )
+  );
 }
-
-export default Home
+export default Home;

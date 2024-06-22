@@ -1,34 +1,91 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Ericmuh's Dev Hub 🚀
 
-## Getting Started
+## Introduction
 
-First, run the development server:
+Welcome to my repository! I'm Ericmuh, a full stack developer passionate about Python, React, Django, and React Native. This repo showcases my work and code samples.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Table of Contents
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [About Me](#about-me)
+- [Technologies](#technologies)
+- [Setup & Installation](#setup--installation)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## About Me
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+👨‍💻 I'm Ericmuh, a full stack developer who loves creating web and mobile applications using:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- **Python** 🐍
+- **React** ⚛️
+- **Django** 🌐
+- **React Native** 📱
 
-## Learn More
+## Technologies
 
-To learn more about Next.js, take a look at the following resources:
+Here are the main technologies I work with:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Frontend**: 
+  - HTML, CSS, JavaScript
+  - React, Redux
+  - Next.js
+- **Backend**:
+  - Python
+  - Django, Django REST Framework
+- **Mobile Development**:
+  - React Native
+- **Databases**:
+  - PostgreSQL
+  - SQLite
+- **Other Tools**:
+  - Docker 🐳
+  - Git & GitHub
+  - CI/CD (Continuous Integration/Continuous Deployment)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Setup & Installation
 
-## Deploy on Vercel
+To get started with the project, follow these steps:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/ericmuh/your-repo-name.git
+   cd your-repo-name
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+
+3. **Run the application**:
+   ```bash
+   npm run dev
+   ```
+
+4. **Access the application**:
+   Open your browser and go to `http://localhost:3000`.
+
+## Contributing
+
+Contributions are welcome! To contribute:
+
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature-branch`)
+3. Make your changes and commit (`git commit -m 'Add feature'`)
+4. Push to the branch (`git push origin feature-branch`)
+5. Create a Pull Request
+
+## License
+
+This repository is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+Feel free to reach out:
+
+- 📧 Email: muhwezi1000@gmail.com
+- 💼 LinkedIn: [Ericmuh LinkedIn](https://www.linkedin.com/in/eric-muhwezi/)
+- 🐙 GitHub: [Ericmuh GitHub](https://github.com/ericmuh)
+
+Thanks for visiting my repository! Happy coding! 😊

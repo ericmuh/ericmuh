@@ -1,91 +1,86 @@
-# Ericmuh's Dev Hub 🚀
+# Eric Muhwezi — Personal Website 🚀
 
-## Introduction
+> **🚧 Coming Soon** — Something exciting is being built. Stay tuned!
 
-Welcome to my repository! I'm Ericmuh, a full stack developer passionate about Python, React, Django, and React Native. This repo showcases my work and code samples.
+---
 
-## Table of Contents
+## About Eric Muhwezi
 
-- [About Me](#about-me)
-- [Technologies](#technologies)
-- [Setup & Installation](#setup--installation)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+Hi, I'm **Eric Muhwezi** — a passionate **Full Stack Software Developer** based in Uganda 🇺🇬.
 
-## About Me
+I build modern, scalable web and mobile applications with a focus on clean code, great user experience, and robust backend systems. I enjoy solving real-world problems through technology and continuously learning new skills to grow as an engineer.
 
-👨‍💻 I'm Ericmuh, a full stack developer who loves creating web and mobile applications using:
+---
 
-- **Python** 🐍
-- **React** ⚛️
-- **Django** 🌐
-- **React Native** 📱
+## 💼 Professional Profile
 
-## Technologies
+- 🏢 **Role**: Full Stack Developer
+- 🌍 **Location**: Uganda
+- 📧 **Email**: muhwezi1000@gmail.com
+- 💼 **LinkedIn**: [linkedin.com/in/eric-muhwezi](https://www.linkedin.com/in/eric-muhwezi/)
+- 🐙 **GitHub**: [github.com/ericmuh](https://github.com/ericmuh)
 
-Here are the main technologies I work with:
+---
 
-- **Frontend**: 
-  - HTML, CSS, JavaScript
-  - React, Redux
-  - Next.js
-- **Backend**:
-  - Python
-  - Django, Django REST Framework
-- **Mobile Development**:
-  - React Native
-- **Databases**:
-  - PostgreSQL
-  - SQLite
-- **Other Tools**:
-  - Docker 🐳
-  - Git & GitHub
-  - CI/CD (Continuous Integration/Continuous Deployment)
+## 🛠️ Tech Stack
 
-## Setup & Installation
+### Frontend
+- HTML5, CSS3, JavaScript (ES6+)
+- React.js, Redux, Next.js
 
-To get started with the project, follow these steps:
+### Backend
+- Python
+- Django, Django REST Framework
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/ericmuh/your-repo-name.git
-   cd your-repo-name
-   ```
+### Mobile
+- React Native
 
-2. **Install dependencies**:
-   ```bash
-   npm install
-   ```
+### Databases
+- PostgreSQL
+- SQLite
 
-3. **Run the application**:
-   ```bash
-   npm run dev
-   ```
+### DevOps & Tools
+- Docker 🐳
+- Git & GitHub
+- CI/CD pipelines
 
-4. **Access the application**:
-   Open your browser and go to `http://localhost:3000`.
+---
 
-## Contributing
+## 🌐 This Website
 
-Contributions are welcome! To contribute:
+This is the source code for Eric Muhwezi's personal portfolio website. It is currently **under active development** and will soon showcase:
 
-1. Fork the repository
-2. Create a new branch (`git checkout -b feature-branch`)
-3. Make your changes and commit (`git commit -m 'Add feature'`)
-4. Push to the branch (`git push origin feature-branch`)
-5. Create a Pull Request
+- 📁 Portfolio projects and case studies
+- 📝 Blog posts and technical write-ups
+- 🎯 Skills, experience, and professional background
+- 📬 A contact form to get in touch
 
-## License
+Check back soon — or follow on LinkedIn and GitHub to stay updated!
 
-This repository is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+---
 
-## Contact
+## 🚀 Local Development
 
-Feel free to reach out:
+```bash
+# Clone the repository
+git clone https://github.com/ericmuh/ericmuh.git
+cd ericmuh
 
-- 📧 Email: muhwezi1000@gmail.com
-- 💼 LinkedIn: [Ericmuh LinkedIn](https://www.linkedin.com/in/eric-muhwezi/)
-- 🐙 GitHub: [Ericmuh GitHub](https://github.com/ericmuh)
+# Install dependencies
+npm install
 
-Thanks for visiting my repository! Happy coding! 😊
+# Start the development server
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+*Built with ❤️ by [Eric Muhwezi](https://www.linkedin.com/in/eric-muhwezi/)*

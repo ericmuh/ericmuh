@@ -19,6 +19,8 @@ jobs:
       - run: npm test
       - run: npm run lint
       - run: npm run build
+      - name: Record the source revision for deployment verification
+        run: printf '%s\n' "$GITHUB_SHA" > out/deployment-revision.txt
       - uses: actions/upload-artifact@v4
         with:
           name: eric-muh-static-site

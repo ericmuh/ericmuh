@@ -6,11 +6,13 @@
 - Production static export succeeds; home, article index, and the published article are generated. The starter draft has no public route.
 - Desktop and mobile browser inspection covers the home page, navigation menu, article index, and article page. At the inspected mobile width (390 CSS pixels), home and article document widths equal the viewport width, with no horizontal page overflow.
 - The mobile menu opens and closes when navigating to writing. The article cover loads and the page metadata and content render correctly.
-- Local preview assets and all repository-local link targets were checked. Hostinger-specific TLS, response headers, 404 handling, credentials, and deployment were not tested because hosting access is not configured.
+- Local preview assets and all repository-local link targets were checked. Live Hostinger checks confirm HTTPS, the home page, article index, article deep link, www hostname, HTTP-to-HTTPS redirect, nosniff response headers, and a 404 for unknown routes. Requests for Git metadata are blocked with 403.
 - Production dependency audit reports zero advisories after dependency cleanup and the patched PostCSS override. Seven high-severity advisories remain in development lint-tool dependencies; these are not shipped as a server or bundled content parser on the static site. Review updates before enabling builds from untrusted source branches.
 
 Screenshots: [desktop](preview-desktop.png) and [mobile article](preview-article-mobile.png).
 
-## Domain and hosting follow-up
+## Live hosting
 
-The portfolio now uses `https://ericmuhwezi.com`. The Hostinger account is already signed in and its Base Premium Web plan is confirmed. No website entry was found for this domain. Website creation and the live Git connection remain pending because the hPanel creation controls did not respond to browser automation. The requested manual creation step is pending. FTP and SSH settings cannot be verified for a website entry that does not yet exist.
+The PHP/HTML website for `ericmuhwezi.com` is configured on the existing Premium Web Hosting plan. GitHub is connected to `ericmuh/ericmuh`, branch `hostinger-site`, root `public_html`. Hostinger reports the deployment completed and auto-deployment is on. The public domain serves the redesigned portfolio. FTP settings and the dedicated document root were inspected; Git integration is the active deployment method. Hostinger's default welcome file was preserved outside the web root before deployment.
+
+The build records its source revision in `/deployment-revision.txt` to verify future releases through the complete GitHub-to-Hostinger path.

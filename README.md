@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <a href="https://ericmuh.com">Portfolio ↗</a> &nbsp; · &nbsp;
+  <a href="https://ericmuhwezi.com">Portfolio ↗</a> &nbsp; · &nbsp;
   <a href="https://www.linkedin.com/in/eric-muhwezi/">LinkedIn ↗</a> &nbsp; · &nbsp;
   <a href="mailto:ericmhwz@gmail.com">Get in touch ↗</a>
 </p>
@@ -161,7 +161,7 @@ See the complete [authoring guide](docs/PUBLISHING.md). The repository includes 
 
 `npm run build` creates **`out/`**, ready for static hosting on Hostinger. Upload its contents to the domain's dedicated `public_html`, preserving subdirectories and `.htaccess`.
 
-Every push to `main` runs the verification workflow and stores a downloadable static-site artifact. The optional SSH deployment workflow is **disabled until explicitly configured**. No hosting credentials belong in the repository.
+Every push to `main` runs the verification workflow and stores a downloadable static-site artifact. The `Verify and prepare Hostinger portfolio` workflow publishes finished files to `hostinger-site` for hPanel Git integration. The optional direct SSH workflow is **disabled until explicitly configured**. No hosting credentials belong in the repository.
 
 Follow the [Hostinger setup guide](docs/HOSTINGER.md) to verify the hosting plan, set GitHub secrets, confirm the destination, and enable automatic deployment. Live deployment is pending hosting configuration; repository source changes do not imply that the live domain has been updated.
 

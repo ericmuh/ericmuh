@@ -99,7 +99,7 @@ export default function Home() {
             <div className="mini-browser">
               <div className="browser-bar">
                 <span>● ● ●</span>
-                <span>ericmuh.com</span>
+                <span>ericmuhwezi.com</span>
                 <ArrowUpRight size={12} />
               </div>
               <div className="mini-content">

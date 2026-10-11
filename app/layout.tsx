@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: { default: "Eric MUH — Software. Systems. People.", template: "%s | Eric MUH" },
   description:
     "Eric Muhwezi — software engineer, systems administrator, and technical leader based in Kampala, Uganda.",
-  metadataBase: new URL("https://ericmuh.com"),
+  metadataBase: new URL("https://ericmuhwezi.com"),
   openGraph: {
     title: "Eric MUH — Software. Systems. People.",
     description:

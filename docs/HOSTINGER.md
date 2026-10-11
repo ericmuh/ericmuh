@@ -10,7 +10,7 @@ Official references: [Hostinger Git deployment](https://www.hostinger.com/suppor
 
 ## Manual first deployment
 
-1. Run `npm ci`, `npm test`, and `npm run build` locally, or download `eric-muh-static-site` from a successful GitHub Verify portfolio workflow.
+1. Run `npm ci`, `npm test`, and `npm run build` locally, or download `eric-muh-static-site` from a successful GitHub Verify and prepare Hostinger portfolio workflow.
 2. Back up the current document root.
 3. Upload the exported files with hPanel File Manager, retaining `.htaccess` and subdirectories. Remove obsolete files belonging to the previous portfolio only after confirming they are safe to remove.
 4. Visit the home page and an article URL directly. Check an unknown URL returns a 404, TLS is active, and images load.
@@ -42,3 +42,15 @@ Use the verified build artifact and hPanel File Manager. Alternatively, check wh
 ## What remains to activate
 
 Confirm the domain/document root and hosting capabilities, approve replacement of the current live site, provision a deployment key and verified host key, and configure GitHub environment values. Never paste private credentials into Markdown, issues, source files, or this README. No live deployment or domain changes have been made.
+
+## Current account and domain setup
+
+The domain is **ericmuhwezi.com**. hPanel inspection confirmed an existing **Base Premium Web** hosting plan and no website entry for this domain at the time of setup. This is suitable for a PHP/HTML static website; no paid Node.js upgrade is needed for this portfolio.
+
+### Git deployment of the finished site
+
+The `Verify and prepare Hostinger portfolio` workflow builds and checks `main`, then publishes only `out/` to the **`hostinger-site`** branch. This keeps Next.js source files and Markdown authoring on `main`, while Hostinger receives finished HTML, CSS, JavaScript, and local images. Deployment history is retained with normal commits and no force-push. Files removed from the export are removed from the branch, including articles changed to drafts.
+
+Once the PHP/HTML website exists in hPanel, use **Advanced → Git** and connect `ericmuh/ericmuh`, branch `hostinger-site`, root directory `public_html`. Enable Hostinger's automatic deployment for that branch. Do not connect `main` directly to ordinary static Git hosting: it contains source, not a built website. If Hostinger needs a new GitHub app authorization, review its requested permissions and limit access to this repository.
+
+This method avoids copying FTP or SSH credentials into GitHub. The static branch is prepared automatically; live updates still depend on the hPanel repository connection being completed and verified. The optional direct SSH workflow remains disabled unless explicitly configured.

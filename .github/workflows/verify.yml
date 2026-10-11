@@ -1,5 +1,6 @@
-name: Verify portfolio
+name: Verify and prepare Hostinger portfolio
 on:
+  workflow_dispatch:
   push:
     branches: [main]
   pull_request:
@@ -23,3 +24,23 @@ jobs:
           name: eric-muh-static-site
           path: out/
           include-hidden-files: true
+  publish-static:
+    if: github.event_name != 'pull_request'
+    needs: verify
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    concurrency:
+      group: hostinger-static-branch
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: eric-muh-static-site
+          path: out/
+      - name: Publish verified files to the hosting branch
+        run: |
+          git config user.name ericmuh
+          git config user.email ericmuh@users.noreply.github.com
+          bash scripts/publish-static.sh

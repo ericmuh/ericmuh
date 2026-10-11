@@ -48,6 +48,17 @@ Much of this work lives in private client environments. This space focuses on pu
 - **Checked before publishing:** malformed metadata, missing images, and invalid dates stop the build.
 
 <details>
+<summary><strong>See the interface: desktop & mobile reading</strong></summary>
+
+![Desktop portfolio preview](docs/preview-desktop.png)
+
+<p align="center"><img src="docs/preview-article-mobile.png" alt="Mobile article reading layout" width="320" /></p>
+
+These previews are captured from the static export. The live domain awaits Hostinger configuration.
+
+</details>
+
+<details>
 <summary><strong>Explore the architecture</strong></summary>
 
 ```text

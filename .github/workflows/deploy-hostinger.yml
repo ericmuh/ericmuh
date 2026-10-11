@@ -1,0 +1,56 @@
+name: Publish to Hostinger
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+concurrency:
+  group: hostinger-production
+  cancel-in-progress: false
+jobs:
+  deploy:
+    if: vars.HOSTINGER_DEPLOY_ENABLED == 'true'
+    runs-on: ubuntu-latest
+    environment: hostinger
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - run: npm run lint
+      - run: npm run build
+      - name: Configure SSH and publish the static export
+        env:
+          SSH_HOST: ${{ secrets.HOSTINGER_SSH_HOST }}
+          SSH_USER: ${{ secrets.HOSTINGER_SSH_USER }}
+          SSH_PORT: ${{ secrets.HOSTINGER_SSH_PORT }}
+          SSH_KEY: ${{ secrets.HOSTINGER_SSH_KEY }}
+          SSH_KNOWN_HOSTS: ${{ secrets.HOSTINGER_SSH_KNOWN_HOSTS }}
+          DEPLOY_DIR: ${{ vars.HOSTINGER_DEPLOY_DIR }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          : "${SSH_HOST:?Set HOSTINGER_SSH_HOST}"
+          : "${SSH_USER:?Set HOSTINGER_SSH_USER}"
+          : "${SSH_PORT:?Set HOSTINGER_SSH_PORT}"
+          : "${SSH_KEY:?Set HOSTINGER_SSH_KEY}"
+          : "${SSH_KNOWN_HOSTS:?Set HOSTINGER_SSH_KNOWN_HOSTS}"
+          : "${DEPLOY_DIR:?Set HOSTINGER_DEPLOY_DIR}"
+          [[ "$SSH_HOST" =~ ^[a-zA-Z0-9.-]+$ ]]
+          [[ "$SSH_USER" =~ ^[a-zA-Z0-9_-]+$ ]]
+          [[ "$SSH_PORT" =~ ^[0-9]+$ ]]
+          [[ "$DEPLOY_DIR" =~ ^/[a-zA-Z0-9_./-]+/public_html/?$ ]]
+          [[ "$DEPLOY_DIR" != *..* ]]
+          mkdir -p "$HOME/.ssh"
+          chmod 700 "$HOME/.ssh"
+          printf '%s\n' "$SSH_KEY" > "$HOME/.ssh/id_ed25519"
+          printf '%s\n' "$SSH_KNOWN_HOSTS" > "$HOME/.ssh/known_hosts"
+          chmod 600 "$HOME/.ssh/id_ed25519" "$HOME/.ssh/known_hosts"
+          trap 'rm -f "$HOME/.ssh/id_ed25519"' EXIT
+          rsync --archive --compress --delete-delay --safe-links \
+            -e "ssh -p $SSH_PORT -o BatchMode=yes -o StrictHostKeyChecking=yes" \
+            out/ "$SSH_USER@$SSH_HOST:$DEPLOY_DIR/"

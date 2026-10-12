@@ -30,7 +30,8 @@ export default function Home() {
           </h1>
           <p className="hero-description">
             I’m Eric Muhwezi. I connect engineering, infrastructure, and people to turn complex
-            requirements into software that works in the real world.
+            requirements into software that works in the real world. I’m open to new roles and
+            exploring opportunities to build useful things with thoughtful teams.
           </p>
           <div className="hero-actions">
             <a className="button primary" href="#projects">
@@ -167,10 +168,9 @@ export default function Home() {
                 make practical delivery decisions.
               </p>
               <p>
-                At Refactory, I coordinate industry-based software projects—from requirements and
-                architecture through testing, deployment, and handover. My approach is practical:
-                understand the problem, make the tradeoffs explicit, and build something people can
-                maintain.
+                My approach is practical: understand the problem, make the tradeoffs explicit,
+                and build something people can maintain. I enjoy connecting hands-on engineering
+                with the bigger picture—how a system is delivered, operated, and used.
               </p>
               <a className="text-link" href="/eric-muhwezi-contact.vcf" download>
                 Save my contact <Download size={16} />
@@ -212,15 +212,16 @@ export default function Home() {
               <span className="portrait-caption mono">ERIC MUH / HUMAN BEHIND THE SYSTEMS</span>
             </div>
             <div className="current-role-copy">
-              <p className="eyebrow"><span className="status-dot" /> CURRENTLY AT REFACTORY</p>
-              <h3>Apprenticeship Officer</h3>
-              <p>I help teams turn real business problems into working software. My day-to-day work connects technical delivery, developer mentorship, and the people a solution is built for.</p>
+              <p className="eyebrow"><span className="status-dot" /> OPEN TO ROLES & NEW POSSIBILITIES</p>
+              <h3>Eric Muhwezi</h3>
+              <p>Software engineer, systems thinker, and a curious problem solver. I build across the stack, care about reliable infrastructure, and enjoy helping people turn ideas into working systems.</p>
               <ul>
-                <li>Shape requirements and review architecture with project teams.</li>
-                <li>Guide implementation, testing, and production readiness.</li>
-                <li>Keep stakeholders aligned through deployment and handover.</li>
+                <li>Build useful applications with clear, maintainable architecture.</li>
+                <li>Connect software with reliable systems and practical delivery.</li>
+                <li>Learn, explore, and collaborate with people who care about their craft.</li>
               </ul>
-              <a className="text-link" href="mailto:ericmhwz@gmail.com">Talk about working together <ArrowUpRight size={16} /></a>
+              <p>Currently, I also support industry-based software projects as an Apprenticeship Officer at Refactory.</p>
+              <a className="text-link" href="mailto:ericmhwz@gmail.com">Explore an opportunity <ArrowUpRight size={16} /></a>
             </div>
           </div>
         </div>

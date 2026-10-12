@@ -29,7 +29,9 @@
 
 I connect software engineering, infrastructure, and people to turn complex requirements into practical systems. My work spans full stack applications, Linux and cloud environments, technology consulting, and technical education.
 
-Currently, I’m an **Apprenticeship Officer at Refactory**, where I coordinate industry-based software projects through requirements, architecture, testing, deployment readiness, and handover. My work connects software engineering, systems infrastructure, developer mentorship, and practical delivery.
+I’m **open to new roles and exploring opportunities** in software engineering, systems infrastructure, and technical collaboration. I care about useful products, maintainable systems, and learning alongside thoughtful teams.
+
+Alongside this work, I’m currently an Apprenticeship Officer at Refactory, supporting industry-based software projects and developer growth.
 
 | Build                        | Operate                      | Guide                           |
 | :--------------------------- | :--------------------------- | :------------------------------ |

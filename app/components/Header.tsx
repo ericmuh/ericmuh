@@ -2,14 +2,15 @@
 import { useState } from "react";
 import { ArrowUpRight, Menu, X } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 export default function Header() {
   const [open, setOpen] = useState(false);
   return (
     <header className="site-header">
       <div className="nav-wrap">
-        <Link href="/" className="wordmark" aria-label="Eric MUH home">
-          e<span>m</span>
-          <i>.</i>
+        <Link href="/" className="brand-lockup" aria-label="Eric MUH home">
+          <Image className="brand-avatar" src="/images/eric-avatar.webp" alt="" width={44} height={44} />
+          <span className="wordmark">e<span>m</span><i>.</i></span>
         </Link>
         <button
           className="menu-toggle"

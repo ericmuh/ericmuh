@@ -1056,3 +1056,11 @@ h3 {
 /* Preserve the actual photograph's full height; never force a portrait crop. */
 .current-role .portrait-panel { align-self: center; aspect-ratio: auto; }
 .current-role .portrait-panel img { width: 100%; height: auto; object-fit: contain; }
+
+.brand-lockup { display: inline-flex; align-items: center; gap: 13px; flex-shrink: 0; }
+.brand-avatar { display: block; width: 44px; height: 44px; object-fit: cover; border-radius: 12px; border: 1px solid #abc78540; background: #0b100e; }
+.brand-lockup .wordmark { display: block; line-height: 1; }
+@media (max-width: 700px) {
+  .brand-lockup { gap: 10px; }
+  .brand-avatar { width: 36px; height: 36px; border-radius: 10px; }
+}

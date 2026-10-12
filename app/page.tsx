@@ -217,7 +217,7 @@ export default function Home() {
           </div>
           <div className="current-role" id="currently">
             <div className="portrait-panel">
-              <Image src="/images/eric-at-work.webp" alt="Eric Muhwezi explaining an idea beside a laptop" width={800} height={1000} />
+              <Image src="/images/eric-profile-reflected.webp" alt="Eric Muhwezi speaking, facing toward his profile introduction" width={800} height={1000} />
               <span className="portrait-caption mono">ERIC MUH / HUMAN BEHIND THE SYSTEMS</span>
             </div>
             <div className="current-role-copy">

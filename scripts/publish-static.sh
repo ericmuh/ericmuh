@@ -10,11 +10,19 @@ remote_head=$(git ls-remote --heads origin "refs/heads/$branch")
 if [[ -n "$remote_head" ]]; then
   git fetch origin "$branch"
   git worktree add --detach "$workspace" FETCH_HEAD
+  # Recover recent hashed assets for pages still held in browser/CDN caches.
+  for revision in $(git log --max-count=20 --reverse --format=%H FETCH_HEAD -- _next); do
+    git archive "$revision" _next | tar -x -C "$workspace"
+  done
 else
   git worktree add --detach "$workspace" HEAD
   git -C "$workspace" switch --orphan "$branch"
 fi
-rsync --archive --delete --safe-links --exclude=.git out/ "$workspace/"
+# Replace public pages, but preserve immutable Next.js assets used by cached pages.
+rsync --archive --delete --safe-links --exclude=.git --exclude=_next out/ "$workspace/"
+if [[ -d out/_next ]]; then
+  rsync --archive --safe-links out/_next/ "$workspace/_next/"
+fi
 git -C "$workspace" add --all
 if git -C "$workspace" diff --cached --quiet; then
   echo 'Static export is already current.'

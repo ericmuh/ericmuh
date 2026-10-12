@@ -35,6 +35,8 @@ test("static publishing keeps history, excludes source, and removes obsolete pag
       ".htaccess"
     ])
       fs.writeFileSync(path.join(repo, "out", file), "Initial export");
+    fs.mkdirSync(path.join(repo, "out/_next/static"), { recursive: true });
+    fs.writeFileSync(path.join(repo, "out/_next/static/old-hash.js"), "Cached page dependency");
     execFileSync("bash", [script], { cwd: repo, stdio: "pipe" });
     const first = git("--git-dir", remote, "rev-parse", "hostinger-site");
     const files = git("--git-dir", remote, "ls-tree", "-r", "--name-only", "hostinger-site");
@@ -43,6 +45,8 @@ test("static publishing keeps history, excludes source, and removes obsolete pag
     assert.ok(!files.includes("source.txt"));
     fs.rmSync(path.join(repo, "out/articles/old-page"), { recursive: true });
     fs.writeFileSync(path.join(repo, "out/index.html"), "Updated export");
+    fs.rmSync(path.join(repo, "out/_next/static/old-hash.js"));
+    fs.writeFileSync(path.join(repo, "out/_next/static/new-hash.js"), "New page dependency");
     execFileSync("bash", [script], { cwd: repo, stdio: "pipe" });
     assert.equal(git("--git-dir", remote, "rev-parse", "hostinger-site^"), first);
     assert.ok(
@@ -50,6 +54,9 @@ test("static publishing keeps history, excludes source, and removes obsolete pag
         "old-page"
       )
     );
+    const retained = git("--git-dir", remote, "ls-tree", "-r", "--name-only", "hostinger-site");
+    assert.ok(retained.includes("_next/static/old-hash.js"));
+    assert.ok(retained.includes("_next/static/new-hash.js"));
     const second = git("--git-dir", remote, "rev-parse", "hostinger-site");
     execFileSync("bash", [script], { cwd: repo, stdio: "pipe" });
     assert.equal(git("--git-dir", remote, "rev-parse", "hostinger-site"), second);

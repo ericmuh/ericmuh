@@ -9,7 +9,7 @@ export default function Header() {
     <header className="site-header">
       <div className="nav-wrap">
         <Link href="/" className="brand-lockup" aria-label="Eric MUH home">
-          <Image className="brand-avatar" src="/images/eric-avatar.webp" alt="" width={44} height={44} />
+          <Image className="brand-avatar" src="/images/eric-logo-cutout.webp" alt="" width={62} height={62} />
           <span className="wordmark">e<span>m</span><i>.</i></span>
         </Link>
         <button

@@ -487,40 +487,22 @@ h3 {
   color: var(--accent);
   margin-top: 28px;
 }
-.experience {
+.current-role {
   margin-top: 85px;
-}
-.experience > .eyebrow {
-  margin-bottom: 30px;
-}
-.experience-row {
   display: grid;
-  grid-template-columns: 180px 1fr 25px;
-  gap: 40px;
-  padding: 27px 0;
-  border-top: 1px solid var(--line);
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  border: 1px solid var(--line);
+  background: #111611;
 }
-.experience-row > .mono {
-  color: var(--muted);
-  font-size: 10px;
-  line-height: 2;
-}
-.experience-row h3 {
-  font-size: 18px;
-  margin: 0 0 8px;
-}
-.experience-org {
-  color: var(--accent);
-  font-size: 12px;
-}
-.experience-row p {
-  font-size: 13px;
-  max-width: 680px;
-  margin-bottom: 0;
-}
-.experience-row > svg {
-  color: #687461;
-}
+.portrait-panel { position: relative; overflow: hidden; }
+.portrait-panel img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.portrait-caption { position: absolute; bottom: 0; left: 0; right: 0; padding: 22px; font-size: 9px; color: var(--accent); background: linear-gradient(transparent, #0c100cee); }
+.current-role-copy { padding: clamp(28px, 4vw, 58px); align-self: center; }
+.current-role-copy h3 { font-size: clamp(26px, 3vw, 38px); letter-spacing: -1px; margin: 20px 0; }
+.current-role-copy p, .current-role-copy li { font-size: 14px; }
+.current-role-copy ul { padding-left: 18px; margin: 24px 0 30px; color: var(--muted); }
+.current-role-copy li { padding-left: 5px; margin-bottom: 12px; }
+.current-role-copy li::marker { color: var(--accent); }
 .article-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -819,10 +801,6 @@ h3 {
   .capabilities {
     gap: 25px;
   }
-  .experience-row {
-    grid-template-columns: 140px 1fr 20px;
-    gap: 25px;
-  }
   .footer {
     flex-wrap: wrap;
   }
@@ -971,26 +949,6 @@ h3 {
     margin-top: 20px;
     font-size: 9px;
   }
-  .experience {
-    margin-top: 55px;
-  }
-  .experience > .eyebrow {
-    font-size: 9px;
-  }
-  .experience-row {
-    grid-template-columns: 1fr 20px;
-    gap: 12px;
-  }
-  .experience-row > .mono {
-    grid-column: 1/-1;
-  }
-  .experience-row h3 {
-    font-size: 17px;
-  }
-  .experience-row > svg {
-    grid-column: 2;
-    grid-row: 2;
-  }
   .article-grid {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -1062,4 +1020,10 @@ h3 {
     animation: none !important;
     transition: none !important;
   }
+}
+
+@media (max-width: 700px) {
+  .current-role { grid-template-columns: 1fr; margin-top: 55px; }
+  .portrait-panel { aspect-ratio: 1; }
+  .current-role-copy { padding: 28px 24px; }
 }

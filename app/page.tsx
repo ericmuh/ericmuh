@@ -162,9 +162,9 @@ export default function Home() {
             </div>
             <div>
               <p>
-                I work where software delivery meets infrastructure and people. My background spans
-                full stack engineering, Linux systems administration, technology consulting, and
-                technical education.
+                I work where software delivery meets infrastructure and people. I build
+                applications, work with Linux and cloud environments, and help technical teams
+                make practical delivery decisions.
               </p>
               <p>
                 At Refactory, I coordinate industry-based software projects—from requirements and
@@ -206,44 +206,22 @@ export default function Home() {
               </article>
             ))}
           </div>
-          <div className="experience">
-            <p className="eyebrow">EXPERIENCE / CONTEXT BEHIND THE CRAFT</p>
-            {[
-              {
-                date: "2025 — Present",
-                role: "Apprenticeship Officer",
-                org: "Refactory",
-                text: "Technical coordination, architecture reviews, deployment readiness, and stakeholder communication across industry-based software projects."
-              },
-              {
-                date: "Consulting",
-                role: "Technology leadership & development",
-                org: "Agatech",
-                text: "Technical discovery, application engineering, cloud environments, production releases, and ongoing systems support."
-              },
-              {
-                date: "2019 — 2024",
-                role: "Full Stack Engineer & Systems Consultant",
-                org: "Smarthost & Management Systems",
-                text: "Web and mobile applications, Linux hosting, DNS, TLS, backups, and operational support."
-              },
-              {
-                date: "Technical education",
-                role: "Python facilitation & curriculum development",
-                org: "Tunga Impact Academy",
-                text: "Practical Python curricula, project-based learning, mentorship, and structured technical feedback."
-              }
-            ].map((item) => (
-              <div className="experience-row" key={item.org}>
-                <span className="mono">{item.date}</span>
-                <div>
-                  <h3>{item.role}</h3>
-                  <span className="experience-org">{item.org}</span>
-                  <p>{item.text}</p>
-                </div>
-                <ArrowUpRight size={18} />
-              </div>
-            ))}
+          <div className="current-role" id="currently">
+            <div className="portrait-panel">
+              <Image src="/images/eric-future.webp" alt="Futuristic illustrated portrait of Eric Muhwezi wearing sunglasses" width={800} height={800} />
+              <span className="portrait-caption mono">ERIC MUH / HUMAN BEHIND THE SYSTEMS</span>
+            </div>
+            <div className="current-role-copy">
+              <p className="eyebrow"><span className="status-dot" /> CURRENTLY AT REFACTORY</p>
+              <h3>Apprenticeship Officer</h3>
+              <p>I help teams turn real business problems into working software. My day-to-day work connects technical delivery, developer mentorship, and the people a solution is built for.</p>
+              <ul>
+                <li>Shape requirements and review architecture with project teams.</li>
+                <li>Guide implementation, testing, and production readiness.</li>
+                <li>Keep stakeholders aligned through deployment and handover.</li>
+              </ul>
+              <a className="text-link" href="mailto:ericmhwz@gmail.com">Talk about working together <ArrowUpRight size={16} /></a>
+            </div>
           </div>
         </div>
       </section>

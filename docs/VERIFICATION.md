@@ -16,3 +16,9 @@ Screenshots: [desktop](preview-desktop.png) and [mobile article](preview-article
 The PHP/HTML website for `ericmuhwezi.com` is configured on the existing Premium Web Hosting plan. GitHub is connected to `ericmuh/ericmuh`, branch `hostinger-site`, root `public_html`. Hostinger reports the deployment completed and auto-deployment is on. The public domain serves the redesigned portfolio. FTP settings and the dedicated document root were inspected; Git integration is the active deployment method. Hostinger's default welcome file was preserved outside the web root before deployment.
 
 The build records its source revision in `/deployment-revision.txt` to verify future releases through the complete GitHub-to-Hostinger path.
+
+## Current-role and portrait update — 12 October 2026
+
+Removed the public employment timeline and historical employers from the website and README. The public profile now focuses on the current Apprenticeship Officer role at Refactory, practical responsibilities, and areas of work. Generated a stylized portrait and matching avatar from Eric's supplied photograph; published optimized assets and matching browser/Apple touch icons. The original photograph is not in the repository.
+
+Production build and lint pass. Desktop and 390-pixel mobile inspection confirm the portrait loads, the current-role card stacks correctly, and there is no horizontal overflow. Previews: [desktop current role](preview-current-role.png) and [mobile current role](preview-current-role-mobile.png). Image prompts and provenance are in [DESIGN.md](DESIGN.md).

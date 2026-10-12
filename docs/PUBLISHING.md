@@ -38,6 +38,6 @@ Keep all images in the repository. Prefer compressed WebP or AVIF for photograph
 
 ## Project content
 
-The home page lives in `app/page.tsx`. Replace or extend the featured project with verified names, roles, descriptions, repository/demo URLs, and locally stored screenshots. Do not use client names, outcomes, or private code without permission. The experience section deliberately omits disputed Agatech dates/title from the two supplied CV versions.
+The home page lives in `app/page.tsx`. Replace or extend the featured project with verified names, roles, descriptions, repository/demo URLs, and locally stored screenshots. Do not use client names, outcomes, or private code without permission. The About section focuses on the current role and working approach; keep employment history and tailored CV content off the public site.
 
 The published sample explains this repository's publishing system. The production-readiness sample is an editorial draft, ready for personal examples and review.

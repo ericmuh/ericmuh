@@ -11,6 +11,10 @@ Research informed the hierarchy and documentation, not a copied layout:
 - [Next.js static exports](https://nextjs.org/docs/app/guides/static-exports): build-time content processing and static routes.
 - [markdown-it](https://github.com/markdown-it/markdown-it): Markdown rendering with raw HTML disabled.
 
-Identity, professional responsibilities, and main email come from the CV supplied in this chat. Agatech dates and titles conflict between versions, so the public presentation uses shared responsibilities without precise dates. No client project names, private project details, statistics, or qualifications were invented. One verified public project—the portfolio itself—is featured until additional case studies are supplied.
+The public profile presents Eric's current role as Apprenticeship Officer at Refactory and his practical approach to engineering, infrastructure, and team delivery. Historical employers, employment dates, qualifications, and CV-style chronology are deliberately omitted. No client project details or achievements are invented. The portfolio itself remains the verified public project.
 
-No portrait or personal image was available in the repository. Original vector artwork was appropriate for this identity; no AI portrait or anime transformation has been fabricated. Contact phone numbers from the CV are intentionally not added to the public interface.
+Eric supplied a portrait and requested a futuristic creative treatment. The built-in image-generation tool created an identity-preserving illustration and a simplified matching favicon. Only the stylized assets are published; the original photograph remains outside the repository.
+
+Portrait prompt: preserve Eric's recognizable face, skin tone, hair, facial hair, sunglasses and warm smile; create a square head-and-shoulders editorial illustration with etched contours, sage rim light, restrained architectural/circuit details, a charcoal background and graphite tech jacket. Avoid text, logos, helmets and excessive neon.
+
+Favicon prompt: simplify the same portrait into broad geometric face shapes with recognizable hair, sunglasses and facial hair, copper skin, sage edge accents and a charcoal background; face fills the square and remains readable at 32 pixels.

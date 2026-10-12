@@ -25,9 +25,11 @@
 
 ## The work
 
+<p align="center"><img src="public/images/eric-avatar.webp" alt="Stylized futuristic portrait of Eric Muhwezi" width="140" /></p>
+
 I connect software engineering, infrastructure, and people to turn complex requirements into practical systems. My work spans full stack applications, Linux and cloud environments, technology consulting, and technical education.
 
-At **Refactory**, I coordinate industry-based software projects through requirements, architecture, testing, deployment readiness, and handover. My consulting work with **Agatech** covers technical discovery, application development, production environments, and ongoing support. I also bring experience in systems consulting and hands-on Python education.
+Currently, I’m an **Apprenticeship Officer at Refactory**, where I coordinate industry-based software projects through requirements, architecture, testing, deployment readiness, and handover. My work connects software engineering, systems infrastructure, developer mentorship, and practical delivery.
 
 | Build                        | Operate                      | Guide                           |
 | :--------------------------- | :--------------------------- | :------------------------------ |
@@ -71,7 +73,7 @@ app/                   ──→  Next.js build    ──→  static portfolio
 
 | Location                 | Purpose                                                  |
 | ------------------------ | -------------------------------------------------------- |
-| `app/page.tsx`           | Portfolio, experience, featured work, and recent writing |
+| `app/page.tsx`           | Portfolio, current role, featured work, and recent writing |
 | `app/articles/`          | Article index and generated article pages                |
 | `app/lib/articles.ts`    | Discovery, validation, rendering, reading time           |
 | `content/articles/`      | Markdown files; filenames become stable URLs             |
@@ -172,7 +174,7 @@ Follow the [Hostinger setup guide](docs/HOSTINGER.md) to verify the hosting plan
 
 The structure draws inspiration from [Brittany Chiang](https://brittanychiang.com/), [Lee Robinson](https://leerob.com/), and [Best README Template](https://github.com/othneildrew/Best-README-Template). The layout and repository-hosted artwork are original to this project.
 
-Professional content is grounded in the supplied CV. Client project details are included only when suitable for public sharing. See [design and provenance notes](docs/DESIGN.md).
+The public profile focuses on my current role and how I work. Client project details are included only when suitable for public sharing. See [design and provenance notes](docs/DESIGN.md).
 
 </details>
 

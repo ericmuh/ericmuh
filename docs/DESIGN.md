@@ -22,3 +22,5 @@ Favicon prompt: simplify the same portrait into broad geometric face shapes with
 The hero centers the illustrated portrait inside code-native orbit rings and connection lines. Labels connect interface, systems and people; motion is slow and respects reduced-motion preferences. The lower profile uses `public/images/eric-at-work.webp`, created with the built-in image-generation tool from the supplied `eric2.jpg`. The similar `eric3.jpg` was omitted to keep the page focused.
 
 Editorial photo prompt: preserve Eric's recognizable face, glasses, expression, clothing, gesture, hands and laptop; retain photographic realism, reduce purple/cyan casts, use warm natural skin tones, subdued shadows and restrained film grain, and simplify the indoor background. No added circuit graphics, costumes or text.
+
+Portrait anatomy correction: the built-in image-generation tool shortened the visible neck and raised the collar and shoulder line for natural head-to-body proportions, preserving likeness, glasses, expression, jacket, background and sage lighting. The corrected asset replaces `public/images/eric-future.webp`.

@@ -100,6 +100,22 @@ export default function Home() {
             Explore GitHub <ArrowUpRight size={16} />
           </a>
         </div>
+        <article className="featured-project operations-project">
+          <div className="project-visual operations-visual">
+            <Image src="/images/operations-manager.svg" alt="Operations Manager architecture: work signals connect organizational memory, specialist agents, and a risk dashboard" width={800} height={560} />
+            <span className="visual-caption">ARCHITECTURE PREVIEW / IN DEVELOPMENT</span>
+          </div>
+          <div className="project-copy">
+            <p className="eyebrow">AI SYSTEMS · ORGANIZATIONAL OPERATIONS</p>
+            <h3>Operations<br />Manager</h3>
+            <p>An AI operations platform designed to connect scattered work activity with organizational context. Memory synthesis, semantic recall, and a specialist risk agent help turn that context into an actionable risk dashboard.</p>
+            <p className="project-status">In development · expanding integrations and workflow automation.</p>
+            <div className="tags">
+              {["Next.js", "TypeScript", "PostgreSQL / pgvector", "Event-driven AI"].map((tag) => <span key={tag}>{tag}</span>)}
+            </div>
+            <a className="text-link" href="mailto:ericmhwz@gmail.com?subject=Operations%20Manager%20project">Discuss the project <ArrowUpRight size={16} /></a>
+          </div>
+        </article>
         <article className="featured-project">
           <a
             className="project-visual"

@@ -41,6 +41,12 @@ Alongside this work, I’m currently an Apprenticeship Officer at Refactory, sup
 
 Much of this work lives in private client environments. This space focuses on public work and engineering practice rather than contribution counts or popularity metrics.
 
+### Featured: Operations Manager
+
+An AI operations platform in development, connecting organizational memory, semantic recall, specialist risk detection, and a risk dashboard. Built around Next.js, TypeScript, PostgreSQL/pgvector, and event-driven domain architecture. Integrations and workflow automation are evolving; this is presented as work in progress rather than a finished autonomous service.
+
+[Discuss Operations Manager](mailto:ericmhwz@gmail.com?subject=Operations%20Manager%20project)
+
 ## Inside the portfolio
 
 **Eric MUH / Digital workspace** is a home for my work and technical writing: a dark editorial interface, an original wireframe identity, and a publishing system built around the tools I already use.

@@ -19,9 +19,9 @@ else
   git -C "$workspace" switch --orphan "$branch"
 fi
 # Replace public pages, but preserve immutable Next.js assets used by cached pages.
-rsync --archive --delete --safe-links --exclude=.git --exclude=_next out/ "$workspace/"
+rsync --archive --checksum --delete --safe-links --exclude=.git --exclude=_next out/ "$workspace/"
 if [[ -d out/_next ]]; then
-  rsync --archive --safe-links out/_next/ "$workspace/_next/"
+  rsync --archive --checksum --safe-links out/_next/ "$workspace/_next/"
 fi
 git -C "$workspace" add --all
 if git -C "$workspace" diff --cached --quiet; then

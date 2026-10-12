@@ -52,7 +52,7 @@ export default function Home() {
           </div>
           <div className="portrait-system">
             <div className="hero-portrait">
-              <Image src="/images/eric-future.webp" alt="Futuristic illustrated headshot of Eric Muhwezi" width={800} height={800} priority />
+              <Image src="/images/eric-future-corrected.webp" alt="Futuristic illustrated headshot of Eric Muhwezi" width={800} height={800} priority />
             </div>
             <div className="orbit-ring orbit-one" aria-hidden="true"><i /></div>
             <div className="orbit-ring orbit-two" aria-hidden="true"><i /></div>

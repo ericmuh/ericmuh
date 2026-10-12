@@ -1027,3 +1027,28 @@ h3 {
   .portrait-panel { aspect-ratio: 1; }
   .current-role-copy { padding: 28px 24px; }
 }
+
+/* A human center, with software, systems and people connected around it. */
+.portrait-system { position: relative; aspect-ratio: 1; isolation: isolate; }
+.hero-portrait { position: absolute; inset: 17%; border-radius: 50%; overflow: hidden; border: 1px solid #aacb8c70; box-shadow: 0 0 55px #9bb87b15; }
+.hero-portrait img { height: 100%; object-fit: cover; animation: none; }
+.orbit-ring { position: absolute; border: 1px solid #a5bf7860; border-radius: 50%; pointer-events: none; }
+.orbit-one { inset: 10%; animation: system-orbit 45s linear infinite; }
+.orbit-two { inset: 5% 20%; transform: rotate(-28deg); border-style: dashed; border-color: #a5bf7838; }
+.orbit-ring i { position: absolute; width: 7px; height: 7px; background: var(--accent); border-radius: 50%; top: 14%; left: 14%; box-shadow: 0 0 14px #abc78580; }
+.orbit-two i { top: auto; left: auto; bottom: 14%; right: 14%; width: 4px; height: 4px; }
+.orbit-connections { position: absolute; inset: 0; width: 100%; height: 100%; stroke: #a5bf7860; stroke-width: 1; z-index: 1; pointer-events: none; }
+.orbit-connections circle { fill: var(--accent); }
+.system-tag { position: absolute; z-index: 2; font: 8px var(--mono); letter-spacing: 1px; padding: 9px 11px; color: var(--accent); background: #111611ec; border: 1px solid #9aaf7140; }
+.tag-interface { left: 5%; top: 27%; }
+.tag-systems { right: 4%; top: 35%; }
+.tag-people { left: 8%; bottom: 25%; }
+.tag-build { right: 6%; bottom: 16%; font-size: 7px; }
+@keyframes system-orbit { to { transform: rotate(360deg); } }
+.portrait-panel img { object-position: center; }
+@media (max-width: 700px) {
+  .system-tag { font-size: 7px; padding: 7px; letter-spacing: .5px; }
+  .tag-build { font-size: 6px; bottom: 14%; }
+  .current-role .portrait-panel { aspect-ratio: 4 / 5; }
+}
+@media (prefers-reduced-motion: reduce) { .orbit-one { animation: none; } }

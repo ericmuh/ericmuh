@@ -21,4 +21,8 @@ The build records its source revision in `/deployment-revision.txt` to verify fu
 
 Removed the public employment timeline and historical employers from the website and README. The public profile now focuses on the current Apprenticeship Officer role at Refactory, practical responsibilities, and areas of work. Generated a stylized portrait and matching avatar from Eric's supplied photograph; published optimized assets and matching browser/Apple touch icons. The original photograph is not in the repository.
 
-Production build and lint pass. Desktop and 390-pixel mobile inspection confirm the portrait loads, the current-role card stacks correctly, and there is no horizontal overflow. Previews: [desktop current role](preview-current-role.png) and [mobile current role](preview-current-role-mobile.png). Image prompts and provenance are in [DESIGN.md](DESIGN.md).
+Production build and lint pass. Desktop and 390-pixel mobile inspection confirm the portrait loads, the current-role card stacks correctly, and there is no horizontal overflow. Previews: [desktop hero](preview-desktop.png) and [mobile current role](preview-current-role-mobile.png). Image prompts and provenance are in [DESIGN.md](DESIGN.md).
+
+## Hero portrait and editorial photography — 12 October 2026
+
+Moved the stylized headshot into the hero with local SVG connection lines, interface/system/people labels, and a slow orbit animation. Reduced-motion preferences disable the orbit. Used the second supplied photograph lower in the profile with a light photographic treatment; omitted the similar third photo to avoid repetition. Build passes, both images load, and 390-pixel mobile inspection shows no horizontal overflow. Updated desktop and mobile previews are stored locally.

@@ -18,3 +18,7 @@ Eric supplied a portrait and requested a futuristic creative treatment. The buil
 Portrait prompt: preserve Eric's recognizable face, skin tone, hair, facial hair, sunglasses and warm smile; create a square head-and-shoulders editorial illustration with etched contours, sage rim light, restrained architectural/circuit details, a charcoal background and graphite tech jacket. Avoid text, logos, helmets and excessive neon.
 
 Favicon prompt: simplify the same portrait into broad geometric face shapes with recognizable hair, sunglasses and facial hair, copper skin, sage edge accents and a charcoal background; face fills the square and remains readable at 32 pixels.
+
+The hero centers the illustrated portrait inside code-native orbit rings and connection lines. Labels connect interface, systems and people; motion is slow and respects reduced-motion preferences. The lower profile uses `public/images/eric-at-work.webp`, created with the built-in image-generation tool from the supplied `eric2.jpg`. The similar `eric3.jpg` was omitted to keep the page focused.
+
+Editorial photo prompt: preserve Eric's recognizable face, glasses, expression, clothing, gesture, hands and laptop; retain photographic realism, reduce purple/cyan casts, use warm natural skin tones, subdued shadows and restrained film grain, and simplify the indoor background. No added circuit graphics, costumes or text.

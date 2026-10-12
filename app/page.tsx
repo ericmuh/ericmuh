@@ -50,12 +50,21 @@ export default function Home() {
             <span>EM / SYSTEM ARCHITECTURE</span>
             <span>01—∞</span>
           </div>
-          <Image
-            src="/images/system-orbit.svg"
-            alt="Layered architectural wireframe with interconnected nodes"
-            width="560"
-            height="560"
-          />
+          <div className="portrait-system">
+            <div className="hero-portrait">
+              <Image src="/images/eric-future.webp" alt="Futuristic illustrated headshot of Eric Muhwezi" width={800} height={800} priority />
+            </div>
+            <div className="orbit-ring orbit-one" aria-hidden="true"><i /></div>
+            <div className="orbit-ring orbit-two" aria-hidden="true"><i /></div>
+            <svg className="orbit-connections" viewBox="0 0 560 560" fill="none" aria-hidden="true">
+              <path d="M75 170H140L195 225M485 210H425L380 255M100 400H155L200 350M455 420H410L355 365" />
+              <circle cx="195" cy="225" r="3" /><circle cx="380" cy="255" r="3" /><circle cx="200" cy="350" r="3" /><circle cx="355" cy="365" r="3" />
+            </svg>
+            <span className="system-tag tag-interface">01 / INTERFACE</span>
+            <span className="system-tag tag-systems">02 / SYSTEMS</span>
+            <span className="system-tag tag-people">03 / PEOPLE</span>
+            <span className="system-tag tag-build">DESIGN · BUILD · EXPLORE</span>
+          </div>
           <div className="art-bottom">
             <span>
               <i /> CONNECTING THE PIECES
@@ -208,7 +217,7 @@ export default function Home() {
           </div>
           <div className="current-role" id="currently">
             <div className="portrait-panel">
-              <Image src="/images/eric-future.webp" alt="Futuristic illustrated portrait of Eric Muhwezi wearing sunglasses" width={800} height={800} />
+              <Image src="/images/eric-at-work.webp" alt="Eric Muhwezi explaining an idea beside a laptop" width={800} height={1000} />
               <span className="portrait-caption mono">ERIC MUH / HUMAN BEHIND THE SYSTEMS</span>
             </div>
             <div className="current-role-copy">

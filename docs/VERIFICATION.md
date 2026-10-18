@@ -26,3 +26,7 @@ Production build and lint pass. Desktop and 390-pixel mobile inspection confirm 
 ## Hero portrait and editorial photography — 12 October 2026
 
 Moved the stylized headshot into the hero with local SVG connection lines, interface/system/people labels, and a slow orbit animation. Reduced-motion preferences disable the orbit. Used the second supplied photograph lower in the profile with a light photographic treatment; omitted the similar third photo to avoid repetition. Build passes, both images load, and 390-pixel mobile inspection shows no horizontal overflow. Updated desktop and mobile previews are stored locally.
+
+## Curated project collection — 18 October 2026
+
+Reviewed available public repository inventory and local checkouts; grouped related repositories into products and documented selection/exclusions in PROJECT_REVIEW.md. The portfolio now presents Operations Manager plus nine curated cards, with the portfolio source linked separately. Build and lint pass. Desktop inspection confirms a two-column card grid. At 390px mobile width, cards form one column and document width equals the viewport, including when scope is expanded. Native scope controls open/close with mouse and keyboard. Local links and assets in the exported homepage resolve. Screenshots: [desktop projects](preview-projects-desktop.png), [mobile projects](preview-projects-mobile.png).

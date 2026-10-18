@@ -11,6 +11,8 @@ import {
   Download
 } from "lucide-react";
 import { getArticles, formatDate } from "./lib/articles";
+import ProjectCollection from "./components/ProjectCollection";
+import { selectedProjects, webProjects } from "./lib/projects";
 
 export default function Home() {
   const articles = getArticles().slice(0, 3);
@@ -116,56 +118,21 @@ export default function Home() {
             <a className="text-link" href="mailto:ericmhwz@gmail.com?subject=Operations%20Manager%20project">Discuss the project <ArrowUpRight size={16} /></a>
           </div>
         </article>
-        <article className="featured-project">
-          <a
-            className="project-visual"
-            href="https://github.com/ericmuh/ericmuh"
-            aria-label="Explore Eric MUH portfolio source"
-          >
-            <div className="mini-browser">
-              <div className="browser-bar">
-                <span>● ● ●</span>
-                <span>ericmuhwezi.com</span>
-                <ArrowUpRight size={12} />
-              </div>
-              <div className="mini-content">
-                <span className="mono">ERIC MUH / DIGITAL WORKSPACE</span>
-                <strong>
-                  Ideas into
-                  <br />
-                  <em>working systems.</em>
-                </strong>
-                <div className="mini-line" />
-                <div className="mini-tags">
-                  <span>ENGINEERING</span>
-                  <span>WRITING</span>
-                </div>
-              </div>
-              <div className="mini-orbit" />
-            </div>
-            <span className="visual-caption">PERSONAL PLATFORM / OPEN SOURCE</span>
-          </a>
-          <div className="project-copy">
-            <p className="eyebrow">WEB ENGINEERING · CONTENT SYSTEMS</p>
-            <h3>
-              Eric MUH
-              <br />
-              Digital workspace
-            </h3>
-            <p>
-              A home for my engineering work and technical writing. A repository-first publishing
-              system turns Markdown into fast, readable pages—without a CMS or a running backend.
-            </p>
-            <div className="tags">
-              {["Next.js", "TypeScript", "Markdown", "Static export"].map((tag) => (
-                <span key={tag}>{tag}</span>
-              ))}
-            </div>
-            <a className="text-link" href="https://github.com/ericmuh/ericmuh">
-              Explore the source <ArrowUpRight size={16} />
-            </a>
-          </div>
-        </article>
+        <div className="collection-heading">
+          <p className="eyebrow">APPLICATIONS & CONNECTED SYSTEMS</p>
+          <p>Software for the work behind the interface.</p>
+        </div>
+        <ProjectCollection projects={selectedProjects} />
+        <div className="collection-heading">
+          <p className="eyebrow">WEB EXPERIENCES</p>
+          <p>Clear, purposeful homes for professional services.</p>
+        </div>
+        <ProjectCollection projects={webProjects} />
+        <a className="portfolio-source-link" href="https://github.com/ericmuh/ericmuh">
+          <Braces size={23} />
+          <span><strong>This digital workspace</strong><span>Next.js · TypeScript · Markdown publishing · Hostinger delivery</span></span>
+          <ArrowUpRight size={19} />
+        </a>
         <div className="work-note">
           <GitBranch size={18} />
           <p>

@@ -41,11 +41,22 @@ Alongside this work, I’m currently an Apprenticeship Officer at Refactory, sup
 
 Much of this work lives in private client environments. This space focuses on public work and engineering practice rather than contribution counts or popularity metrics.
 
-### Featured: Operations Manager
+### Selected projects
 
-An AI operations platform in development, connecting organizational memory, semantic recall, specialist risk detection, and a risk dashboard. Built around Next.js, TypeScript, PostgreSQL/pgvector, and event-driven domain architecture. Integrations and workflow automation are evolving; this is presented as work in progress rather than a finished autonomous service.
+| Project | Focus |
+| --- | --- |
+| Operations Manager | Organizational memory, semantic recall, and AI risk detection; in development |
+| Kaazi | Worker and employer mobile apps with a Django service-marketplace API |
+| Scoris Digital Library | Student reading, librarian administration, PDFs, and catalog synchronization |
+| Fleet & Driver Operations | Driver logs, shift oversight, vehicles, and reporting |
+| TradeOps | Web and mobile trading operations workspace with a FastAPI backend |
+| Nonprofit Operations Platform | Programs, projects, staff workflows, and operational records |
+| Marketplace Commerce API | Accounts, listings, orders, payments, reviews, and messaging |
+| Smart Crop Calendar | Crop and weather planning across web, API, and Android; early-stage prototype |
+| Terrain Advocates | Professional services website with practice-area and team pages |
+| People Sync Solutions | Responsive HR consulting website |
 
-[Discuss Operations Manager](mailto:ericmhwz@gmail.com?subject=Operations%20Manager%20project)
+The portfolio groups related frontend, backend, and mobile repositories into complete projects. Small exercises, starter templates, duplicate checkouts, and unimplemented concepts are omitted. Public source links are included only where verified; other projects use discussion links. [Browse the work](https://ericmuhwezi.com/#projects) · [Selection and evidence](docs/PROJECT_REVIEW.md).
 
 ## Inside the portfolio
 

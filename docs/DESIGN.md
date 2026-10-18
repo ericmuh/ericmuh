@@ -11,7 +11,7 @@ Research informed the hierarchy and documentation, not a copied layout:
 - [Next.js static exports](https://nextjs.org/docs/app/guides/static-exports): build-time content processing and static routes.
 - [markdown-it](https://github.com/markdown-it/markdown-it): Markdown rendering with raw HTML disabled.
 
-The public profile centers Eric's identity, engineering approach, and openness to new roles. His current Refactory role is supporting context. Historical employers, employment dates, qualifications, and CV-style chronology are deliberately omitted. No client project details or achievements are invented. The portfolio itself remains the verified public project.
+The public profile centers Eric's identity, engineering approach, and openness to new roles. His current Refactory role is supporting context. Historical employers, employment dates, qualifications, and CV-style chronology are deliberately omitted. No client project details or achievements are invented. The project collection is curated from repository evidence; see PROJECT_REVIEW.md for scope and selection.
 
 Eric supplied a portrait and requested a futuristic creative treatment. The built-in image-generation tool created an identity-preserving illustration and a simplified matching favicon. Only the stylized assets are published; the original photograph remains outside the repository.
 
